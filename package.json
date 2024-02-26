@@ -1,6 +1,6 @@
 {
   "name": "easter-word-practice",
-  "homepage": "https://eialist.github.io/easter/",
+  "homepage": "https://eialist.github.io/easter",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
