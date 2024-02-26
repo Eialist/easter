@@ -10,7 +10,7 @@ export const Frontpage = () => {
     setLanguage((prevLanguage) => !prevLanguage);
   };
   return (
-    <div style={{ height: "92vh" }}>
+    <div style={{ minHeight: "92vh" }}>
       <nav className="navbar navbar-white bg-white">
         <a className="navbar-brand" href="#">
           <img src={logo} width="55" height="55" alt=""></img>
