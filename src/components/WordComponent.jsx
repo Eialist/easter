@@ -26,7 +26,6 @@ export const WordsComponent = (setLanguage) => {
     e.preventDefault();
     let enteredWord = e.target.value.toLowerCase();
     setInputValues({ ...inputValues, [wordId]: enteredWord });
-    console.log(inputValues);
   };
 
   const inputStyle = (wordId) => {
@@ -38,7 +37,6 @@ export const WordsComponent = (setLanguage) => {
       ) {
         counter++;
         if (counter === 9) {
-          console.log("ok");
           checkIfAllCorrectAnswers(counter);
         }
         return { border: "2px solid rgb(83, 165, 81)" };
@@ -50,6 +48,7 @@ export const WordsComponent = (setLanguage) => {
   const checkIfAllCorrectAnswers = (counter) => {
     if (counter === 9) {
       active = "modal";
+      window.scrollTo(0, 0);
     }
   };
 
@@ -84,9 +83,7 @@ export const WordsComponent = (setLanguage) => {
           onClick={() => setNewWords()}>
           Nya ord
         </button>
-        <div>
-          {active === "modal" ? <ModalComponent /> : console.log("wth")}
-        </div>
+        <div>{active === "modal" ? <ModalComponent /> : false}</div>
       </div>
     </>
   );
