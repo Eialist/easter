@@ -4,11 +4,12 @@ export const Jumbotron = () => {
   return (
     <div className="jumbotron">
       <img src={chicken} alt="" width={100} />
-      <h1 className="display-5">Easter Vocabulary</h1>
+      <h2 className="display-5">Easter Vocabulary</h2>
       <hr className="my-3"></hr>
-      <p className="lead">
-        Ett komplement till Easter Activity Book för att träna på viktiga ord
-        som dyker upp i häftet.
+      <p className="lead" style={{ textAlign: "left" }}>
+        Träna mer på orden i Easter Activity Book. Växla mellan svenska och
+        engelska på knappen i hörnet. Behöver du hjälp finns ordlistan i ditt
+        häfte.
       </p>
     </div>
   );
